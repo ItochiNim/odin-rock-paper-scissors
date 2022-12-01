@@ -1,20 +1,41 @@
-body{
+h1 {
+    font-family: myFirstFont;
+}
+
+#result {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: myFirstFont;
+}
+
+body {
+    background: rgb(84, 143, 84);
     display: flex;
     justify-content: center;
     flex-direction: vertical;
 }
-.game_box{
+
+.game_box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-p{
+.image_button {
+    background: white;
+    border-radius: 5px;
+}
+
+.lastSelected{
+    border: 3px solid orange;
+}
+
+p {
     align-self: center;
     text-align: center;
 }
 
-#buttons{
+#buttons {
     display: flex;
     flex: 1 1 auto;
     justify-content: center;
@@ -22,4 +43,13 @@ p{
     align-items: center;
 }
 
+#score,
+#result,
+#round {
+    text-align: center;
+}
 
+@font-face {
+    font-family: myFirstFont;
+    src: url("pixel.ttf");
+}
