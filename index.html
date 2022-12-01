@@ -7,20 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ODIN RPS</title>
     <link rel="stylesheet" href="stylesheets.css">
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
 </head>
 
 <body>
-
     <div id="game_box">
-        <h1>ROCK-PAPER-SCISSORS' GAME</h1>
-        <p>Your Choice:</p>
+        <h1>ROCK PAPER SCISSORS</h1>
+        <p>YOUR CHOICE</p>
         <div id="buttons">
-            <button class="button" data-choice="rock">ROCK</button>
-            <button class="button" data-choice="paper">PAPER</button>
-            <button class="button" data-choice="scissors">SCISSORS</button>
+            <img src="./images/rock.png" class="image_button" alt="rock" data-choice="rock" width="100px">
+            <img src="./images/paper.png" class="image_button" alt="paper" data-choice="paper" width="100px">
+            <img src="./images/scissors.png" class="image_button" alt="scissors" data-choice="scissors" width="100px">
         </div>
-        <p>Result</p>
+        <p id="roundTitle">ROUND</p>
+        <div id="round"></div>
+        <p id="scoreTitle">SCORE</p>
+        <div id="score"></div>
         <div id="result"></div>
     </div>
 </body>
